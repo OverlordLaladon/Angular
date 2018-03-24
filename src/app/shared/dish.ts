@@ -1,6 +1,6 @@
 export class Dish {
   name: string;
-  Image: string;
+  image: string;
   category: string;
   label: string;
   price: string;
