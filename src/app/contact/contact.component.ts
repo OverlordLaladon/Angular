@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
-import { Feedback, ContactType } from "../shared/feedback";
+import { Feedback } from "../shared/feedback";
+import { ContactType } from "../shared/feedback";
 
 @Component({
   selector: "app-contact",
@@ -33,6 +34,14 @@ export class ContactComponent implements OnInit {
   onSubmit() {
     this.feedback = this.feedbackForm.value;
     console.log(this.feedback);
-    this.feedbackForm.reset();
+    this.feedbackForm.reset({
+      firstname: "",
+      lastname: "",
+      telnum: "",
+      email: "",
+      agree: false,
+      contacttype: "None",
+      message: ""
+    });
   }
 }
