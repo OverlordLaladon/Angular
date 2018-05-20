@@ -8,4 +8,5 @@ export class Feedback {
   message: string;
 }
 
-export const ContactType = ["None", "Tel", "Email"];
+/*export const ContactType = ["None", "Tel", "Email"];*/
+export type ContactType = "None" | "Tel" | "Email";
