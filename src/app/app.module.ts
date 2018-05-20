@@ -9,6 +9,7 @@ import { ReactiveFormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
 import "hammerjs";
+import "rxjs";
 import { MenuComponent } from "./menu/menu.component";
 import { DishdetailComponent } from "./dishdetail/dishdetail.component";
 import { HeaderComponent } from "./header/header.component";
